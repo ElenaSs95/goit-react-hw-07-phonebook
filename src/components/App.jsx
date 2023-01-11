@@ -1,16 +1,14 @@
+import { Toaster } from 'react-hot-toast';
+import { AddContactForm } from './AddContactForm/AddContactForm';
+import { Contacts } from './Contacts/Contacts';
+import styles from './App.module.css';
+
 export const App = () => {
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
+    <div className={styles.container}>
+      <AddContactForm />
+      <Contacts />
+      <Toaster position="top-right" />
     </div>
   );
 };
